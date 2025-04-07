@@ -814,19 +814,102 @@ footer {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 540px) {
-  .skills-box {
-    width: 100%;
-    margin-bottom: 20px;
+.coldif {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .coldif {
+    grid-template-columns: repeat(3, 1fr); /* 2 cột khi nhỏ */
   }
 
-  .skills-list {
-    gap: 8px;
-    justify-content: flex-start;
+  @media only screen and (max-width: 540px) {
+    .coldif {
+      grid-template-columns: repeat(2, 1fr); /* 1 cột siêu nhỏ */
+    }
+  }
+}
+footer {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+/* Top Footer */
+.top-footer {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Middle Footer - Menu */
+.middle-footer {
+  margin-bottom: 20px;
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_menu_list a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Social Icons */
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-social-icons .icon a {
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.footer-social-icons .icon a:hover {
+  color: #007bff;
+}
+
+/* Bottom Footer */
+.bottom-footer {
+  font-size: 14px;
+  color: #777;
+}
+
+/* ✅ Responsive tweaks */
+@media only screen and (max-width: 600px) {
+  .footer-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
-  .skills-list span {
+  .footer-social-icons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  footer {
+    padding: 30px 10px;
+  }
+
+  .top-footer {
+    font-size: 20px;
+  }
+
+  .bottom-footer {
     font-size: 12px;
-    padding: 4px 10px;
   }
 }

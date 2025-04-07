@@ -814,3 +814,19 @@ footer {
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 540px) {
+  .skills-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .skills-list {
+    gap: 8px;
+    justify-content: flex-start;
+  }
+
+  .skills-list span {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}

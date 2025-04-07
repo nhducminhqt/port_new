@@ -576,9 +576,9 @@ footer {
   color: var(--text-color-second); /* ✅ dùng biến */
 }
 
-.middle-footer .footer-menu {
+/* .middle-footer .footer-menu {
   display: flex;
-}
+} */
 
 .footer_menu_list {
   list-style: none;
@@ -836,25 +836,25 @@ footer {
   text-align: center;
 }
 
-/* Top Footer */
+/* Top title */
 .top-footer {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-/* Middle Footer - Menu */
-.middle-footer {
-  margin-bottom: 20px;
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 20px auto;
+  max-width: 700px; /* Giới hạn chiều ngang để có thể wrap khi cần */
 }
 
-.footer-menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding: 0;
+.footer_menu_list {
   margin: 0;
 }
 
@@ -862,54 +862,7 @@ footer {
   text-decoration: none;
   font-weight: 500;
   color: #333;
-}
-
-/* Social Icons */
-.footer-social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.footer-social-icons .icon a {
-  font-size: 20px;
-  color: #333;
-  transition: color 0.3s;
-}
-
-.footer-social-icons .icon a:hover {
-  color: #007bff;
-}
-
-/* Bottom Footer */
-.bottom-footer {
   font-size: 14px;
-  color: #777;
-}
-
-/* ✅ Responsive tweaks */
-@media only screen and (max-width: 600px) {
-  .footer-menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .footer-social-icons {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  footer {
-    padding: 30px 10px;
-  }
-
-  .top-footer {
-    font-size: 20px;
-  }
-
-  .bottom-footer {
-    font-size: 12px;
-  }
+  padding: 5px 15px;
+  white-space: nowrap; /* tránh xuống dòng trong mỗi item */
 }

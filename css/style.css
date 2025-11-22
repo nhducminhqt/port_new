@@ -89,12 +89,12 @@ html {
   flex-direction: column;
 }
 
-.experience-company {
+.experience-compapany {
   font-style: italic;
   font-weight: 500;
   margin-bottom: 10px;
 }
-.experience-company {
+.experience-compapany {
   font-style: italic;
   font-weight: 500;
   margin-bottom: 10px;
@@ -102,13 +102,13 @@ html {
 }
 
 /* Accent styles for individual experience entries */
-.experience-box.com1-Copy {
+.experience-box.compa1 {
   border-left: 6px solid var(--first-color);
 }
-.experience-box.com2-Copy {
+.experience-box.compa2 {
   border-left: 6px solid var(--second-color);
 }
-.experience-box.com3-Copy {
+.experience-box.compa3 {
   border-left: 6px solid var(--third-color);
 }
 

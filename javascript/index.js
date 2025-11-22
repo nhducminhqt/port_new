@@ -22,7 +22,7 @@ function headerShadow() {
   }
 }
 var typingEffect = new Typed(".typedText", {
-  strings: ["Python Developer"],
+  strings: ["Junior Developer"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
